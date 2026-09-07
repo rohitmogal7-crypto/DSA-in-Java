@@ -1,0 +1,19 @@
+  //reverse the numbers in an array and return the reversed array
+  import java.util.*;
+
+ public class JavaBasics{
+  public static int reversenums(int nums[]){
+    for(int i=0; i<nums.length/2; i++){
+      int temp = nums[i];
+      nums[i] = nums[nums.length-1-i];
+      nums[nums.length-1-i] = temp;
+    }
+    return nums.length;
+  }
+     public static void main(String[] args){
+      int nums[] = {90,80,10,20,50,75};
+      System.out.println("Original array: " + Arrays.toString(nums));
+      System.out.println("Length of reversed array: " + reversenums(nums));
+      System.out.println("Reversed array: " + Arrays.toString(nums));
+    }
+ }
