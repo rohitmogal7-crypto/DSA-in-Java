@@ -1,0 +1,20 @@
+  //count occurance of an element in an array
+  import java.util.*;
+
+ public class JavaBasics{
+  public static int count_occurance(int nums[], int target){
+    int count=0;
+    for(int i=0;i<nums.length;i++){
+      if(nums[i]==target){
+        count++;
+      }
+    }
+    return count;
+  }
+     public static void main(String[] args){
+      int nums[] = {90,80,10,20,50,75};
+      int target = 80;
+      int result = count_occurance(nums, target);
+      System.out.println("Number of occurrences of " + target + ": " + result);
+    }
+ }
